@@ -9,7 +9,7 @@ Let's say you have target files under `/docs`.
 Run the command below to generate a merged YAML file.
 
 ```shell
-$ docker run --rm -v $PWD/docs:/swagger ohbarye/swagger-merger 'swagger-merger -c -i /swagger/src.yaml -o /swagger/dist.yaml'
+$ docker run --rm -v $PWD/docs:/swagger --entrypoint swagger-merger ohbarye/swagger-merger '-c -i /swagger/src.yaml -o /swagger/dist.yaml'
 ```
 
 ### watch mode
